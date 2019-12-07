@@ -23,7 +23,7 @@ public class Produto implements Serializable {
             inverseJoinColumns = @JoinColumn(name = "categoria_id")
     )
     private List<Categoria> categorias = new ArrayList<Categoria>();
-//    private List<ItemPedido> pedidos = new ArrayList<>();
+
     public Produto(String nome, Double preco) {
         this.nome = nome;
         this.preco = preco;
@@ -59,14 +59,6 @@ public class Produto implements Serializable {
     public void setCategorias(List<Categoria> categorias) {
         this.categorias = categorias;
     }
-
-//    public List<ItemPedido> getPedidos() {
-//        return pedidos;
-//    }
-//
-//    public void setPedidos(List<ItemPedido> pedidos) {
-//        this.pedidos = pedidos;
-//    }
 
     @Override
     public boolean equals(Object o) {

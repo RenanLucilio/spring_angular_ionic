@@ -45,8 +45,8 @@ public class CursomcApplication implements CommandLineRunner {
         p2.getCategorias().addAll(Arrays.asList(cat1, cat2));
         p3.getCategorias().addAll(Arrays.asList(cat1));
 
-        categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
-        produtoRepository.saveAll(Arrays.asList(p1, p2, p3));
+//        categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
+//        produtoRepository.saveAll(Arrays.asList(p1, p2, p3));
 
         Estado est1 = new Estado("Minhas Gerais");
         Estado est2 = new Estado("São Paulo");
@@ -58,8 +58,8 @@ public class CursomcApplication implements CommandLineRunner {
         est1.getCidades().addAll(Arrays.asList(c1));
         est2.getCidades().addAll(Arrays.asList(c2, c3));
 
-        estadoRepository.saveAll(Arrays.asList(est1, est2));
-        cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
+//        estadoRepository.saveAll(Arrays.asList(est1, est2));
+//        cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
 
         Cliente cli1 = new Cliente("Maria Silva", "maria@gmail.com", "42599424844", TipoCliente.PESSOA_FISICA);
         cli1.getTelefones().addAll(Arrays.asList("123456789", "123456789"));
@@ -67,7 +67,7 @@ public class CursomcApplication implements CommandLineRunner {
         Endereco e1 = new Endereco("Rua Flores", "300", "Apto 303", "Jardim", "321654", c1, cli1);
         Endereco e2 = new Endereco("Avenida Matos", "105", "Sala 800", "Centro", "321654", c1, cli1);
 
-        clienteRepository.saveAll(Arrays.asList(cli1));
-        enderecoRepository.saveAll(Arrays.asList(e1, e2));
+//        clienteRepository.saveAll(Arrays.asList(cli1));
+//        enderecoRepository.saveAll(Arrays.asList(e1, e2));
     }
 }
