@@ -42,7 +42,7 @@ Além disto é bom ter um editor para trabalhar com o código como [Intellij](ht
 $ git clone https://github.com/rlucilio/study-spring.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd estudos-spring
+$ cd study-spring
 
 # Instale as dependências
 $ mvn clean install
